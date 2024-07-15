@@ -1,0 +1,200 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: none;
+    border: none;
+    background: none;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+    background: #C9CFFF;
+}
+
+.conteiner-calculadora
+{
+    height: 450px, auto;
+    width: 290px;
+    padding: 22px 0;
+    
+    background: #FFFFFF;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+    font-family: 'Comfortaa', sans-serif;
+ 
+}
+
+.conteiner-tela
+{
+    margin: auto;
+    padding: 8px px;
+    width: 236px;
+    height: auto;
+     
+    border-bottom: 2px solid #ABC3FF;
+
+}
+
+    .tela-superior
+    {
+        padding: 4px 6px;
+        min-height: 26px;
+
+        text-align: right;
+        overflow: hidden;
+        white-space: nowrap;
+        color: rgb(155, 155, 155);
+    }
+        .expressao-anterior
+        {
+            float: right;
+        }
+
+    .tela-inferior
+    {
+        padding: 0 0 4px 0;
+        margin: 6px 0 0 0;
+        min-height: 40px;
+
+        color: #ABC3FF;
+        font-size: 32px;
+        
+    }
+
+        .sinal-igual
+        {
+            margin: 0 6px 0 0;
+            font-size: 40px;
+            user-select: none;
+            display: none;
+        }
+
+        .expressao-atual
+        {
+            text-align: right;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+.conteiner-botoes
+{   
+    margin: 0 auto;
+    padding-top: 10px;
+    height: 315px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+
+    user-select: none;
+}
+
+    .conteiner-botoes > button
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .operadores, #deletar, #limpar
+    {
+        background: #EFF3FF;
+        color: #B5C7FF;
+    }
+
+    .operadores:hover, #limpar:hover
+    {
+        color: #a0b6fe;
+    }
+
+        #limpar
+        {
+            font-size: 38px;
+        }
+
+        #deletar-icon
+        {
+            height: 34px;
+            width: 34px;
+            fill: #B5C7FF;
+        }
+
+        #deletar:hover #deletar-icon
+        {
+            fill: #a0b6fe;
+        }
+
+        #porcento
+        {
+            font-size: 24px;
+        }
+
+        #dividir
+        {
+            font-size: 40px;
+        }
+
+        #multiplicar
+        {
+            font-size: 34px;
+        }
+
+        #subtrair
+        {
+            font-size: 42px;
+        }
+
+        #somar
+        {
+            font-size: 34px
+        }
+
+    .digitos, #sinal
+    {
+        color: rgba(144, 144, 144, 0.536);
+        font-size: 28px;
+    }
+
+        .digitos:hover, #sinal:hover
+        {
+            color: rgba(144, 144, 144, 0.700);
+        }
+
+        .digitos:active, #sinal:active
+        {
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.058) -3px -3px 6px 1px inset;
+            color: rgba(144, 144, 144, 0.600);
+            transform: scale(0.99);
+        }
+
+        #sinal
+        {
+            font-size: 24px;
+        }
+
+        #decimal
+        {
+            font-size: 40px;
+        }
+
+    #calcular
+    {
+        background: #ABC3FF;
+        color: #FFFFFF;
+                
+        font-size: 36px;
+    }
+
+
+
